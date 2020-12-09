@@ -28,13 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnToken = new System.Windows.Forms.Button();
+            this.txtResults = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btnToken
+            // 
+            this.btnToken.Location = new System.Drawing.Point(10, 12);
+            this.btnToken.Name = "btnToken";
+            this.btnToken.Size = new System.Drawing.Size(133, 35);
+            this.btnToken.TabIndex = 0;
+            this.btnToken.Text = "Token";
+            this.btnToken.UseVisualStyleBackColor = true;
+            this.btnToken.Click += new System.EventHandler(this.btnToken_Click);
+            // 
+            // txtResults
+            // 
+            this.txtResults.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtResults.Location = new System.Drawing.Point(10, 53);
+            this.txtResults.Multiline = true;
+            this.txtResults.Name = "txtResults";
+            this.txtResults.Size = new System.Drawing.Size(626, 382);
+            this.txtResults.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(648, 447);
+            this.Controls.Add(this.txtResults);
+            this.Controls.Add(this.btnToken);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnToken;
+        private System.Windows.Forms.TextBox txtResults;
     }
 }
 
